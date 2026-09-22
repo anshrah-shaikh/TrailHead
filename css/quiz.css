@@ -1,0 +1,11 @@
+.quiz-wrap{min-height:60vh}.quiz-container{max-width:720px}
+.quiz-intro{text-align:center;padding:55px 0}.quiz-intro .lede{margin:0 auto 28px}
+.quiz-card{background:linear-gradient(145deg,rgba(255,255,255,.82),rgba(228,217,189,.5));border:1px solid rgba(31,37,40,.2);border-radius:24px;padding:34px 32px;box-shadow:var(--shadow-3d)}
+.quiz-progress{margin-bottom:26px}.quiz-progress-track{height:9px;background:rgba(255,255,255,.55);border:1px solid rgba(31,37,40,.2);border-radius:999px;overflow:hidden;margin-bottom:8px}.quiz-progress-fill{height:100%;width:0%;background:linear-gradient(90deg,var(--rust),var(--gold));transition:width .35s ease}.quiz-progress-label{font-size:.78rem;font-weight:700;color:var(--ink-soft)}
+#question-text{margin-bottom:22px}
+.quiz-options{display:flex;flex-direction:column;gap:11px;margin-bottom:22px}
+.quiz-option{text-align:left;padding:15px 17px;border:1px solid rgba(31,37,40,.25);border-radius:14px;background:rgba(255,255,255,.58);cursor:pointer;font-family:var(--font-body);font-size:.98rem;color:var(--ink);transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease,background .2s ease}
+.quiz-option:hover{transform:translateY(-3px);box-shadow:0 9px 20px rgba(31,37,40,.08);border-color:var(--slate);background:#fffdf8}.quiz-option.is-selected{background:var(--rust);color:#fff5e9;border-color:var(--rust-dark);box-shadow:0 9px 20px rgba(169,71,53,.2)}
+.quiz-nav{display:flex;justify-content:flex-start}.quiz-nav .btn[hidden]{display:none}
+.quiz-result{background:linear-gradient(135deg,#203b49,#315a69);color:#f1ede0;border-radius:24px;padding:48px 34px;text-align:center;box-shadow:0 24px 50px rgba(32,59,73,.18)}.quiz-result .eyebrow-plain{color:#e4c77c}.quiz-result h2{color:#fff}.quiz-result .lede{color:#d4d9d8;margin:0 auto 26px}.quiz-result-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}.quiz-result .btn-ghost{color:#f1ede0;border-color:#d4d9d8;box-shadow:none}.quiz-result .btn-solid{background:var(--gold);border-color:var(--gold-dark);color:#201a08}.quiz-result .btn-solid:hover{background:var(--gold-dark);color:#f1ede0}
+@media(max-width:560px){.quiz-card,.quiz-result{padding:28px 20px}}

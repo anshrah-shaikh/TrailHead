@@ -1,0 +1,664 @@
+/* =========================================================
+   CONTACT PAGE
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   PAGE INTRO
+   --------------------------------------------------------- */
+
+.contact-head {
+    padding-bottom: 10px;
+}
+
+
+/* ---------------------------------------------------------
+   MAIN CONTACT LAYOUT
+   --------------------------------------------------------- */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: minmax(270px, 0.78fr) minmax(0, 1.5fr);
+    gap: 26px;
+    align-items: stretch;
+}
+
+
+/* ---------------------------------------------------------
+   FORM AREA
+   --------------------------------------------------------- */
+
+.feedback-panel {
+    min-width: 0;
+}
+
+.feedback-panel-head {
+    margin-bottom: 20px;
+}
+
+.feedback-panel-head h2 {
+    font-size: 1.7rem;
+    margin: 7px 0 8px;
+}
+
+.feedback-panel-head p {
+    color: var(--ink-soft);
+    max-width: 720px;
+    margin: 0;
+}
+
+
+/* ---------------------------------------------------------
+   FORM CARDS
+   --------------------------------------------------------- */
+
+.form-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.contact-choice {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 560px;
+    padding: 28px;
+
+    background: linear-gradient(
+        145deg,
+        rgba(255, 255, 255, 0.82),
+        rgba(228, 217, 189, 0.45)
+    );
+
+    border: 1px solid rgba(31, 37, 40, 0.2);
+    border-radius: 22px;
+
+    box-shadow: var(--shadow-3d);
+
+    overflow: hidden;
+}
+
+
+/* Coloured line at top of form cards */
+
+.contact-choice::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 5px;
+
+    background: linear-gradient(
+        90deg,
+        var(--rust),
+        var(--gold)
+    );
+}
+
+
+/* Form card text */
+
+.contact-choice h2,
+.contact-choice h3 {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    margin: 8px 0 12px;
+}
+
+.contact-choice p {
+    color: var(--ink-soft);
+}
+
+
+/* ---------------------------------------------------------
+   FORM CONTENT
+   --------------------------------------------------------- */
+
+.form-link-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+
+    margin-top: auto;
+    padding-top: 28px;
+
+    text-align: center;
+}
+
+
+/* ---------------------------------------------------------
+   QR PLACEHOLDER
+   --------------------------------------------------------- */
+
+.qr-box {
+    width: 150px;
+    height: 150px;
+
+    display: grid;
+    place-items: center;
+
+    margin: 0 auto 20px;
+
+    background: rgba(255, 255, 255, 0.65);
+
+    border: 1px dashed rgba(31, 37, 40, 0.4);
+    border-radius: 18px;
+
+    color: var(--ink-soft);
+
+    font-size: 0.78rem;
+    font-weight: 700;
+
+    text-align: center;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+.qr-box:hover {
+    transform: translateY(-4px);
+
+    background: rgba(255, 255, 255, 0.85);
+
+    box-shadow: 0 12px 25px rgba(31, 37, 40, 0.1);
+}
+
+.qr-box span {
+    display: block;
+    padding: 10px;
+}
+
+
+/* ---------------------------------------------------------
+   FORM BUTTON
+   --------------------------------------------------------- */
+
+.form-link {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    max-width: 230px;
+
+    min-height: 48px;
+
+    padding: 11px 18px;
+
+    background: var(--rust) !important;
+    color: #ffffff !important;
+
+    border-radius: 999px;
+
+    text-decoration: none !important;
+
+    font-weight: 700;
+
+    box-shadow: 0 10px 20px rgba(169, 71, 53, 0.2);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.form-link:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 14px 25px rgba(169, 71, 53, 0.28);
+}
+
+
+/* Small text underneath button */
+
+.qr-hint {
+    max-width: 260px;
+
+    margin: 12px auto 0;
+
+    color: var(--ink-soft) !important;
+
+    font-size: 0.75rem;
+
+    line-height: 1.5;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   OTHER WAYS TO REACH US
+   ========================================================= */
+
+
+/* Main dark contact card */
+
+.contact-aside {
+    position: relative;
+
+    background: linear-gradient(
+        145deg,
+        #203b49,
+        #294c5b 58%,
+        #315a69
+    );
+
+    color: #f1ede0;
+
+    border-radius: 24px;
+
+    padding: 30px;
+
+    box-shadow: 0 20px 42px rgba(32, 59, 73, 0.18);
+
+    overflow: hidden;
+}
+
+
+/* Decorative circles */
+
+.contact-aside::after {
+    content: "";
+
+    position: absolute;
+
+    width: 190px;
+    height: 190px;
+
+    right: -80px;
+    bottom: -80px;
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 0 24px rgba(255, 255, 255, 0.025),
+        0 0 0 48px rgba(255, 255, 255, 0.018);
+}
+
+
+/* Heading */
+
+.contact-aside h2 {
+    position: relative;
+    z-index: 1;
+
+    color: #ffffff !important;
+
+    font-size: 1.65rem;
+
+    margin: 0 0 10px;
+}
+
+
+/* Description */
+
+.contact-aside > p {
+    position: relative;
+    z-index: 1;
+
+    color: rgba(241, 237, 224, 0.78) !important;
+
+    max-width: 34rem;
+
+    margin-bottom: 0;
+}
+
+
+/* ---------------------------------------------------------
+   CONTACT LINKS CONTAINER
+   --------------------------------------------------------- */
+
+.contact-aside .contact-links {
+    display: flex !important;
+    flex-direction: column !important;
+
+    gap: 10px;
+
+    margin-top: 24px;
+
+    position: relative;
+    z-index: 5;
+}
+
+
+/* ---------------------------------------------------------
+   INDIVIDUAL CONTACT LINK CARD
+   --------------------------------------------------------- */
+
+.contact-aside .contact-links .contact-link {
+    display: flex !important;
+
+    align-items: center !important;
+
+    gap: 13px;
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 13px 14px;
+
+    border: 1px solid rgba(255, 255, 255, 0.14) !important;
+
+    border-radius: 16px;
+
+    background: rgba(255, 255, 255, 0.055) !important;
+
+    color: #ffffff !important;
+
+    text-decoration: none !important;
+
+    font-size: inherit;
+
+    line-height: normal;
+
+    box-shadow: none;
+
+    transition:
+        transform 0.22s ease,
+        background 0.22s ease,
+        border-color 0.22s ease,
+        box-shadow 0.22s ease;
+}
+
+
+/* Hover */
+
+.contact-aside .contact-links .contact-link:hover {
+    transform: translateX(4px);
+
+    background: rgba(255, 255, 255, 0.1) !important;
+
+    border-color: rgba(255, 255, 255, 0.26) !important;
+
+    color: #ffffff !important;
+
+    text-decoration: none !important;
+
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ---------------------------------------------------------
+   CONTACT LINK ICON
+   --------------------------------------------------------- */
+
+.contact-aside .contact-link .contact-link-icon {
+    width: 38px;
+    height: 38px;
+
+    display: grid !important;
+    place-items: center;
+
+    flex-shrink: 0;
+
+    border-radius: 11px;
+
+    background: rgba(228, 199, 124, 0.14) !important;
+
+    color: #e4c77c !important;
+
+    font-weight: 700;
+
+    font-size: 0.85rem;
+
+    line-height: 1;
+}
+
+
+/* ---------------------------------------------------------
+   CONTACT LINK TEXT
+   --------------------------------------------------------- */
+
+.contact-aside .contact-link .contact-link-copy {
+    display: flex !important;
+    flex-direction: column !important;
+
+    min-width: 0;
+
+    gap: 3px;
+}
+
+
+/* Platform name */
+
+.contact-aside .contact-link .contact-link-copy strong {
+    display: block;
+
+    color: #e4c77c !important;
+
+    font-size: 0.74rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.09em;
+
+    font-weight: 700;
+
+    line-height: 1.2;
+}
+
+
+/* Address / username */
+
+.contact-aside .contact-link .contact-link-copy span {
+    display: block;
+
+    color: #f4f0e6 !important;
+
+    font-size: 0.84rem;
+
+    line-height: 1.3;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+
+/* ---------------------------------------------------------
+   TRAILHEAD NOTE
+   --------------------------------------------------------- */
+
+.contact-aside .contact-note {
+    position: relative;
+    z-index: 2;
+
+    margin-top: 24px;
+
+    padding: 15px 16px;
+
+    border-left: 2px solid #e4c77c;
+
+    background: rgba(255, 255, 255, 0.045);
+}
+
+
+/* Note title */
+
+.contact-aside .contact-note > span {
+    display: block;
+
+    color: #e4c77c !important;
+
+    font-size: 0.7rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.09em;
+
+    font-weight: 700;
+}
+
+
+/* Note text */
+
+.contact-aside .contact-note p {
+    margin: 6px 0 0;
+
+    color: rgba(241, 237, 224, 0.76) !important;
+
+    font-size: 0.82rem;
+
+    line-height: 1.5;
+}
+
+
+/* ---------------------------------------------------------
+   FAQ
+   --------------------------------------------------------- */
+
+.faq-section {
+    max-width: 800px;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-top: 24px;
+}
+
+.faq-item {
+    padding: 4px 18px;
+
+    background: rgba(255, 255, 255, 0.5);
+
+    border: 1px solid rgba(31, 37, 40, 0.2);
+
+    border-radius: 14px;
+
+    transition: box-shadow 0.2s ease;
+}
+
+.faq-item[open] {
+    box-shadow: var(--shadow-soft);
+}
+
+.faq-item summary {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+
+    padding: 14px 0;
+
+    cursor: pointer;
+
+    font-family: var(--font-display);
+
+    font-weight: 600;
+
+    list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: "+";
+
+    flex-shrink: 0;
+
+    font-size: 1.3rem;
+
+    color: var(--rust-dark);
+}
+
+.faq-item[open] summary::after {
+    content: "\2212";
+}
+
+.faq-item p {
+    margin: 0;
+
+    padding-bottom: 16px;
+
+    color: var(--ink-soft);
+
+    max-width: none;
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-aside {
+        grid-column: auto;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+    .form-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-choice {
+        min-height: auto;
+    }
+
+    .form-link-card {
+        margin-top: 28px;
+    }
+}
+
+
+@media (max-width: 520px) {
+
+    .contact-choice {
+        padding: 24px;
+    }
+
+    .qr-box {
+        width: 140px;
+        height: 140px;
+    }
+
+    .form-link {
+        max-width: 100%;
+    }
+
+    .contact-aside {
+        padding: 24px;
+    }
+
+    .contact-aside .contact-link .contact-link-copy span {
+        font-size: 0.8rem;
+    }
+}
