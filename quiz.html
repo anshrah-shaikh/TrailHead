@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Find your path — Trailhead</title>
+<meta name="description" content="Answer six quick questions about how you think and what you enjoy, then see which areas you naturally lean toward.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" width="34" height="34" viewBox="0 0 34 34" aria-hidden="true">
+        <circle cx="17" cy="17" r="16" fill="none" stroke="#232019" stroke-width="2"/>
+        <path d="M6 24 L13 11 L17 18 L21 9 L28 24 Z" fill="#a8472b" stroke="#232019" stroke-width="1.4" stroke-linejoin="round"/>
+        <circle cx="21" cy="9" r="1.6" fill="#efe8d6" stroke="#232019" stroke-width="1.2"/>
+      </svg>
+      <span class="brand-text">Trailhead<small>Career field guide</small></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+    <nav class="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="quiz.html">Find your path</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="section-tight quiz-wrap">
+    <div class="container quiz-container">
+
+      <div class="quiz-intro" id="quiz-intro">
+        <span class="eyebrow-plain">Six quick questions · zero pressure</span>
+        <h1>What kind of thinker are you?</h1>
+        <p class="lede">This isn't a test, a diagnosis, or a magic answer to "which stream should I take?" It is a quick little detour to see what kinds of problems, subjects and ways of thinking you naturally lean toward.</p>
+        <button class="btn btn-solid" id="start-quiz">Start the quiz</button>
+      </div>
+
+      <div class="quiz-card" id="quiz-card" hidden>
+        <div class="quiz-progress" aria-hidden="true">
+          <div class="quiz-progress-track">
+            <div class="quiz-progress-fill" id="progress-fill"></div>
+          </div>
+          <span class="quiz-progress-label" id="progress-label">Question 1 of 6</span>
+        </div>
+
+        <h2 id="question-text"></h2>
+        <div class="quiz-options" id="quiz-options"></div>
+
+        <div class="quiz-nav">
+          <button class="btn btn-ghost btn-sm" id="back-btn">Back</button>
+        </div>
+      </div>
+
+      <div class="quiz-result" id="quiz-result" hidden>
+        <span class="eyebrow-plain">Your trailhead is</span>
+        <h2 id="result-stream"></h2>
+        <p class="lede" id="result-copy"></p>
+        <div class="quiz-result-actions">
+          <a href="careers.html" class="btn btn-solid" id="result-cta">See these careers</a>
+          <button class="btn btn-ghost" id="retake-btn">Retake the quiz</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="margin-bottom:12px;">
+          <svg width="30" height="30" viewBox="0 0 34 34" aria-hidden="true">
+            <circle cx="17" cy="17" r="16" fill="none" stroke="#1f2528" stroke-width="1.6"/>
+            <path d="M6 24 L13 11 L17 18 L21 9 L28 24 Z" fill="#a94735" stroke="#1f2528" stroke-width="1.2" stroke-linejoin="round"/>
+          </svg>
+          <span class="brand-text">Trailhead</span>
+        </div>
+        <p>A student-built guide for exploring careers, courses and possibilities — whether you already have a plan or are still figuring out where to begin.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="careers.html">All careers</a></li>
+          <li><a href="quiz.html">Find your path</a></li>
+          <li><a href="about.html">About the project</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="contact.html">Feedback &amp; forms</a></li>
+          <li><a href="contact.html#faq">Frequently asked questions</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="footer-year"></span> Trailhead. Built as a Community Engagement Project.</span>
+      <span>Explore freely. Decide thoughtfully. 🌱</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/quiz.js"></script>
+</body>
+</html>
