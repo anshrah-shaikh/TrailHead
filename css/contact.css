@@ -178,6 +178,14 @@
     padding: 10px;
 }
 
+.qr-box img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
 
 /* ---------------------------------------------------------
    FORM BUTTON
